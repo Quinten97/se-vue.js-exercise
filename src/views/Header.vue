@@ -21,6 +21,7 @@
                   <img class="banner-image" src="../assets/images/love-park-logo.png">
                 </a>
               </router-link>
+              <span class="heading-text">Spring into LOVE</span>
           </p>
       </div>
     </div>
@@ -34,8 +35,23 @@
 </script>
 
 <style scoped>
-  .banner-image {
-    height: 220px;
+  .hero-body {
+    padding: 0;
+}
+  p {
+    display: flex;
+    justify-content: start;
+    align-items: end;
     padding-bottom: 25px;
+}
+  .banner-image {
+    width: 60vw;
+  }
+  .heading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 150vw;
+    color: #444444;
+    text-align: left;
   }
 </style>

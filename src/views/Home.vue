@@ -9,15 +9,20 @@
         </figure>
     </div>
 
+    <div>
+      <Footer></Footer>
+    </div>
 </template>
 
 <script>
   import Header from '@/views/Header.vue'
+  import Footer from '@/components/Footer.vue'
 
   export default {
     name: 'About',
     components: {
-        Header
+        Header,
+        Footer
     }
   }
 </script>

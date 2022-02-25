@@ -24,3 +24,11 @@
     created() {}
   }
 </script>
+
+<style scoped>
+  .column {
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+  }
+
+</style>
