@@ -9,9 +9,16 @@
         </figure>
     </div>
 
+<<<<<<< Updated upstream
     <div>
       <Footer></Footer>
     </div>
+=======
+    <div class="footer-div">
+      <Footer></Footer>
+    </div>
+
+>>>>>>> Stashed changes
 </template>
 
 <script>
@@ -28,6 +35,9 @@
 </script>
 
 <style scoped>
+  * {
+    overflow: hidden;
+  }
   .hero.is-info .title {
       color: black;
   }
@@ -35,6 +45,7 @@
       color: black;
   }
   .hero.is-info {
+      width: 100vw;
       background-color: #b3e8f9;
       color: #fff;
   }
