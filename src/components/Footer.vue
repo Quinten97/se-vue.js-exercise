@@ -71,28 +71,23 @@
 </script>
 
 <style scoped>
-<<<<<<< Updated upstream
-  .column {
-    font-weight: bold;
-    border-bottom: 1px solid #444444;
-  }
-=======
   a {
     text-decoration: underline;
   }
   p {
     font-weight: normal;
   }
+  .columns {
+    max-width: 100vw;
+  }
   .column {
     padding-left: 1.5rem;
     font-weight: bold;
-    color: #444444;
     font-size: 2.5vh;
     border-bottom: 1px solid #444444;
   }
   .icon-children {
     margin-left: 0.25rem;
   }
->>>>>>> Stashed changes
 
 </style>

@@ -9,16 +9,10 @@
         </figure>
     </div>
 
-<<<<<<< Updated upstream
-    <div>
-      <Footer></Footer>
-    </div>
-=======
     <div class="footer-div">
       <Footer></Footer>
     </div>
 
->>>>>>> Stashed changes
 </template>
 
 <script>

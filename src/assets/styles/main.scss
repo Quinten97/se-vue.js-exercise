@@ -1,9 +1,17 @@
 @import '~bulma';
 
+
+* {
+  box-sizing: border-box;
+}
 .content-align {
   position: relative;
   top: -40px;
   overflow: visible;
   border: 10px solid white;
   background: white;
+}
+
+h2 {
+  font-size: 2rem;
 }

@@ -24,11 +24,7 @@
                   <img class="banner-image" src="../assets/images/love-park-logo.png">
                 </a>
               </router-link>
-<<<<<<< Updated upstream
               <span class="heading-text">Spring into LOVE</span>
-=======
-              <span class="heading">Spring into LOVE</span>
->>>>>>> Stashed changes
           </p>
       </div>
     </div>
@@ -42,15 +38,6 @@
 </script>
 
 <style scoped>
-<<<<<<< Updated upstream
-  .hero-body {
-    padding: 0;
-}
-  p {
-    display: flex;
-    justify-content: start;
-    align-items: end;
-=======
   .navbar {
     text-align: right;
     font-size: 1.25rem;
@@ -61,7 +48,6 @@
   }
   .banner-image {
     height: 30vw;
->>>>>>> Stashed changes
     padding-bottom: 25px;
 }
   .banner-image {
@@ -73,6 +59,7 @@
     width: 150vw;
     color: #444444;
     text-align: left;
+    padding-bottom: 25px;
   }
   .title {
     display: flex;
