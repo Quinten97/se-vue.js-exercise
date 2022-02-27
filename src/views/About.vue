@@ -1,56 +1,81 @@
 <template>
-    <div class="about">
-        <Header></Header>
-        <div class="container content-align is-overlay">
-          <h2>About</h2>
-          <p v-if="data" v-html='data.content'></p>
-        </div>
-        <div class="columns">
-            <div class="column is-one-quarter is-offset-4">
-                <figure class="image">
-                    <img src="../assets/images/parks-and-rec-logo.png">
-                </figure>
-            </div>
-        </div>
-        <div class="has-background-link">
-            <div class="container">
-                <Footer bgcolor="has-background-link" textcolor="has-text-white"></Footer>
-            </div>
-        </div>
+  <main class="about view">
+    <Header />
+    <div class="container">
+      <h1>About</h1>
+      <div class="text-container" v-if="data" v-html="data.content" />
     </div>
+    <figure class="image-container">
+      <img
+        src="../assets/images/parks-and-rec-logo.png"
+        alt="philadelphia parks and recreation banner"
+      />
+    </figure>
+    <Footer />
+  </main>
 </template>
 
 <script>
-import Header from "@/views/Header.vue"
-import Footer from "@/components/Footer.vue"
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "About",
   components: {
-    Header, 
-    Footer
+    Header,
+    Footer,
   },
   methods: {
-      getData: function() {
-         fetch('https://locations-staging-admin.phila.gov/love-park/wp-json/pages/v2/archive?id=7')
-        .then(res => res.json())
-        .then(data => this.data = data)
-        .catch(err => console.log(err.message))
-      }
+    getData: function() {
+      fetch(
+        "https://locations-staging-admin.phila.gov/love-park/wp-json/pages/v2/archive?id=7"
+      )
+        .then((res) => res.json())
+        .then((data) => (this.data = data))
+        .catch((err) => console.log(err.message));
     },
-    mounted(){
-        this.getData();
-    },
+  },
+  mounted() {
+    this.getData();
+  },
   data() {
-      return {
-          data: null
-      }
-  }
-}
+    return {
+      data: null,
+    };
+  },
+};
 </script>
 
-<style scoped>
-    .column {
-        max-width: 100vw;
-    }
+<style scoped lang="scss">
+@import "../assets/styles/variables.scss";
+.about /deep/ .header {
+  background: $sun;
+}
+
+.container {
+  padding: 1rem;
+  background: $snow;
+  margin-top: -2rem;
+  max-width: 1000px;
+}
+
+.footer {
+  background: $ocean;
+  color: $snow;
+}
+
+.footer /deep/ a {
+  color: $snow;
+}
+
+.image-container {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  padding-top: 5rem;
+}
+
+.image-container img {
+  width: 100%;
+}
 </style>
