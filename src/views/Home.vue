@@ -1,49 +1,47 @@
 <template>
-    <div class="home">
-      <Header></Header>
+  <main class="home view">
+    <div class="container">
+      <Header />
+      <figure class="image-container">
+        <img src="../assets/images/love-park-hero.jpeg" />
+      </figure>
     </div>
-
-    <div class="container content-align is-overlay">
-        <figure class="image">
-          <img src="../assets/images/love-park-hero.jpeg">
-        </figure>
-    </div>
-
-    <div class="footer-div">
-      <Footer></Footer>
-    </div>
-
+  </main>
+  <Footer />
 </template>
 
 <script>
-  import Header from '@/views/Header.vue'
-  import Footer from '@/components/Footer.vue'
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
-  export default {
-    name: 'About',
-    components: {
-        Header,
-        Footer
-    }
-  }
+export default {
+  name: "About",
+  components: {
+    Header,
+    Footer,
+  },
+};
 </script>
 
-<style scoped>
-  * {
-    overflow: hidden;
-  }
-  .hero.is-info .title {
-      color: black;
-  }
-  .navbar-end {
-      color: black;
-  }
-  .hero.is-info {
-      width: 100vw;
-      background-color: #b3e8f9;
-      color: #fff;
-  }
-  .top-padding {
-      padding-top: 20px;
-  }
+<style scoped lang="scss">
+@import "../assets/styles/variables.scss";
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.image-container {
+  padding: 1rem;
+  background: $snow;
+  margin-top: -2rem;
+  max-width: 1000px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/deep/ .column {
+  border-color: rgba($pavement, 0.5);
+}
 </style>
