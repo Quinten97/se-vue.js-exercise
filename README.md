@@ -1,5 +1,7 @@
 # Love Park 
 
+## Live Demo
+   you can preview a live demo [here](https://lovepark.netlify.app/)
 ## Getting Started
     Here are some instructions on setting up this project locally. Follow these simple steps to get a local copy up and running.
 ### Prequisites
@@ -7,7 +9,6 @@
 ```sh
 npm install npm@latest-g
 ```
-
 ### Installation
 1. Clone this repository.
 ```sh
