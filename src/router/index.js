@@ -5,7 +5,10 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    components: { default: Home}
+    components: { default: Home},
+    meta: {
+      title: "Home"
+    }
   },
   {
     path: '/about',
